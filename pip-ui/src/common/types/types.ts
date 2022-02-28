@@ -1,0 +1,1 @@
+export type RC = React.ReactElement | null;

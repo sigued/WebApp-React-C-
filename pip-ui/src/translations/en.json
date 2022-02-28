@@ -1,0 +1,24 @@
+{
+  "translation": {
+    "welcome": "Welcome",
+    "completed": "Completed",
+    "error": "Error",
+    "pending": "Pending",
+    "processing": "Processing",
+    "settings": "Settings",
+    "logout": "Logout",
+    "my_account": "My account",
+    "history": "Requests",
+    "order_date": "Date",
+    "order_status": "Request",
+    "order_number": "Request number",
+    "order_info": "A list of requests saved in the system",
+    "download": "Download",
+    "send_by_email": "Send by email",
+    "category": "Category",
+    "cr": "Coefficient of Recompression (CR)",
+    "dashboard": "Geotechnical correlations",
+    "invitation_list": "List of invitations",
+    "invitation_info": "Every person that had received an invitation"
+  }
+}

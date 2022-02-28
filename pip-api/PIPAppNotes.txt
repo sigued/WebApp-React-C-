@@ -1,0 +1,72 @@
+Installation:
+	- VS Code
+	- dotnet sdk version 5.0.4
+	- Postman
+	- NodeJs (ou NVM)
+	
+	
+Extensions VS Code:
+	- C# ( for VS Code power by OmniSharp)
+	- C# Extensions (voir auteur JosKreativ)
+	- Material Icon Theme (auteur Philipp Kief) seulement pour les icons dans l'IDE
+	
+
+Paramètres utiles pour VS Code:
+	- File -> autosave
+	- File -> Preferences -> settings
+	
+	
+Cacher les dossier bin et obj:
+	- File -> Preferences -> settings -> rechercher exclude -> cliquer sur Add Pattern -> **/obj et **/bin
+	
+
+Configuration API:
+	- autoriser https => aller dans le dossier API et entrer la commander suivante dans le terminal : dotnet dev-certs https --trust
+	- Changement du niveau de sécurité du logging de Warning à information pour le mode développement: appsettings.Development.json -> Logging -> LogLevel -> Microsoft: Information
+	- Changement de la configuration pour le lancement de l'API afin de ne pas lancer le browser lorsqu'elle démarre : launchSettings.json -> "API" -> "launchBrowser" : false
+	
+Creation des entities:
+	- Ajout d'une entite AppUser avec les parametres Id et UserName dans le dossier entities
+	- Installer Nuget Gallery si on utilise VS Code (par pcislo)
+	- Ajouter Le package "Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.9" (dans l'API => API.csproj) (a modifier plus tard pour utiliser une autre BD)
+	- ajouter le package EntityFramework a partir de nuget.org -> taper recherche dotnet-ef et installer la version qui correspond a la version du runtime de dotnet
+	(dotnet tool install --global dotnet-ef --version 5.0.9)
+	- creation du schema de la bd : dotnet ef migrations add InitialCreate -o Data/Migrations
+	- creation de la bd: dotnet ef database update
+	
+Angular App:
+
+VS Code Setup:
+	- Angular Language Service
+	- Angular Snippets (Version 12)
+	- Bracket Pair Colorizer 2
+
+Autoriser CORS policy:
+
+	- dans API -> Startup.cs -> ConfigureServices -> services.AddCors();
+	- Startup.cs -> Configure -> app.UserCors(); (faire attention l'ordre de l'emplacement est important)
+
+Ajout des modules de style Pour Angular (Bootstrap):
+	- Ajout de Bootstrap pour le styling dans le dossier client : https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
+	- Ajout du module d'icones de Bootstrap : npm install font-awesome
+	
+Congiguration de https pour Angular:
+	- https://medium.com/@rubenvermeulen/running-angular-cli-over-https-with-a-trusted-certificate-4a0d5f92747a
+
+	
+ne pas oublier d'ajouter appsetting.json file au gitignore global et ne pas oublier d<envoyer les certificat https 
+
+
+Mot de passe :
+Étapes importantes :
+	- Calculer un Hash avec le mot de passe de l'utilisateur
+	- Sur le Hash calculé, appliquer un Salt qui va formater le Hash de manière à ce qu'il soit un impossible de retrouver le mot de passe avec le Hash
+	- Pour recalculer le mdp il faut donc connaitre la formule de Hash ainsi que le Salt associé au résultat du mdp Hashé
+	
+	=> Ajout du PasswordHash etg PasswordSalt dans la db :
+		- Ajouter les 2 attributs dans l'entite en question
+		- dotnet ef migrations add <nom de la migration> (ajoute la nouvelle migration avec l'entite modifiee)
+		- dotnet ef database update (mise-a-jour de la table et de la bd)
+
+
+Heritage pour creation d'un Controller de base duquel les tous les controller vont heriter et qui contient tous les attributs et methodes communs:

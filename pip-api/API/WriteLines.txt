@@ -1,0 +1,129 @@
+------------- parametres utilises-------------
+Nom: Coefficient de courbure
+Categorie: Paramètres de caractérisation
+Cc = 128
+
+
+**************************** Tableau de clacul pour e avec Cc ****************************
+
+***
+Equation: (Cc + 0.189) / 0.54
+Applicability: Toutes les argiles
+Reference: Nishida (1956)
+Resultat: 237.387
+***
+
+***
+Equation: (Cc + 0.1075) / 0.43
+Applicability: Argiles brésiliennes
+Reference: Cozzolino (1961)
+Resultat: 297.924
+***
+
+***
+Equation: (Cc + 0.0783) / 0.29
+Applicability: Sols cohesifs, non organiques; Argiles limoneuses; argiles
+Reference: Hough (1957)
+Resultat: 441.649
+***
+
+***
+Equation: (Cc + 0.375) / 0.75
+Applicability: Sols de faible plasticité
+Reference: Sowers (1970)
+Resultat: 171.167
+***
+
+***
+Equation: (Cc + 0.175) / 0.35
+Applicability: Organique, sols à grains fins, limon organique
+Reference: Hough (1957)
+Resultat: 366.214
+***
+
+
+**************************** Tableau de clacul pour WL avec Cc ****************************
+
+***
+Equation: (Cc + 0.054) / 0.006
+Applicability: Toutes les argiles avec  WL <100%
+Reference: Azzouz et al.(1976)
+Resultat: 21342.333
+***
+
+***
+Equation: (Cc + 0.0414) / 0.0046
+Applicability: Argiles Brésiliennes
+Reference: Cozzolino (1961)
+Resultat: 27835.087
+***
+
+***
+Equation: (Cc + 0.09) / 0.009
+Applicability: Argiles normalement consolidées
+Reference: Terzaghi et Peck (1967)
+Resultat: 14232.222
+***
+
+***
+Equation: (Cc + 0.049) / 0.007
+Applicability: Argiles remaniées
+Reference: Skempton (1944)
+Resultat: 18292.714
+***
+
+***
+Equation: (Cc + 0.1196) / 0.0092
+Applicability: Toutes les argiles
+Reference: Mayne(1980)
+Resultat: 13926.043
+***
+
+
+**************************** Tableau de clacul pour i avec Cc ****************************
+
+***
+Equation: 138 * Cc - 26
+Applicability: Corrélation utilisée pour les argiles CM , CL et CH
+Reference: 
+Resultat: 17638
+***
+
+
+**************************** Tableau de clacul pour Wn avec Cc ****************************
+
+***
+Equation: 100 * (Cc^(2/3))
+Applicability: Argiles finlandaises
+Reference: Argiles finlandaises
+Resultat: 12800
+***
+
+***
+Equation: (Cc + 0.075) / 0.01
+Applicability: Toutes les argiles
+Reference: Herrero (1983)
+Resultat: 12807.5
+***
+
+***
+Equation: Cc / 0.01
+Applicability: Toutes les argiles
+Reference: Koppula (1981)
+Resultat: 12800
+***
+
+***
+Equation: (Cc + 0.05) / 0.01
+Applicability: Toutes les argiles
+Reference: Azzouz et al.(1976)
+Resultat: 12805
+***
+
+***
+Equation: Cc / 0.0115
+Applicability: Sols organiques ,tourbes, limons et argiles organiques
+Reference: Moran et al (1958)
+Resultat: 11130.435
+***
+

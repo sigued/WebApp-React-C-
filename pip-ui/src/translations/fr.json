@@ -1,0 +1,24 @@
+{
+  "translation": {
+    "welcome": "Bienvenue",
+    "completed": "Completé",
+    "error": "Erreur",
+    "pending": "En attendant",
+    "processing": "En traitement",
+    "settings": "Paramètres",
+    "logout": "Se déconnecter",
+    "my_account": "Mon compte",
+    "history": "Requêtes",
+    "order_date": "Date",
+    "order_status": "Statut",
+    "order_number": "Numéro de la requête",
+    "order_info": "Une liste des requêtes enregistrés dans le système",
+    "download": "Télécharger",
+    "send_by_email": "Envoyer par courriel",
+    "category": "CATÉGORIE",
+    "cr": "COEFFICIENT DE RECOMPRESSION (CR)",
+    "dashboard": "Corrélations géotechniques",
+    "invitation_list": "Liste des invitations",
+    "invitation_info": "Toutes personne ayant reçu une invitation"
+  }
+}
